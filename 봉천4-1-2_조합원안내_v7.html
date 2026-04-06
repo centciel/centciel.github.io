@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>봉천 4-1-2구역 재개발 조합원 안내</title>
+<link href="https://cdn.jsdelivr.net/gh/projectnoonnu/nanumsquare-neo@1.0/font.css" rel="stylesheet">
+<style>
+/* ══ RESET ══ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+/* ══ VARIABLES ══ */
+:root {
+  --font: 'NanumSquareNeo', 'Noto Sans KR', sans-serif;
+  --red: #E03030;
+  --green: #1A8A4A;
+  --blue: #1555A0;
+  --gold: #B07800;
+  --dark: #1A1A2A;
+  --bg: #F4F2EE;
+  --bg2: #ECEAE5;
+  --white: #FFFFFF;
+  --text: #1A1A1A;
+  --text2: #444444;
+  --text3: #666666;
+  --border: #CCCCCC;
+  --shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+/* ══ BASE ══ */
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+/* ══ TOP NAV ══ */
+#topnav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 20px;
+  gap: 0;
+}
+.topnav-logo {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  white-space: nowrap;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.topnav-logo span { color: #F0A030; }
+.topnav-menu {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.topnav-menu::-webkit-scrollbar { display: none; }
+.topnav-menu > li { position: relative; flex-shrink: 0; }
+.topnav-menu > li > a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 14px;
+  height: 56px;
+  color: rgba(255,255,255,0.82);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+  border-bottom: 3px solid transparent;
+}
+.topnav-menu > li > a:hover,
+.topnav-menu > li > a.active {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-bottom-color: #F0A030;
+}
+/* 드롭다운 */
+.dropdown-wrap { position: relative; }
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 56px; left: 0;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--shadow);
+  min-width: 200px;
+  z-index: 300;
+}
+.dropdown-wrap:hover .dropdown,
+.dropdown-wrap.open .dropdown { display: block; }
+.dropdown a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.12s;
+  line-height: 1.5;
+}
+.dropdown a:hover {
+  background: #F0F4FF;
+  border-left-color: var(--blue);
+  color: var(--blue);
+}
+
+/* ══ PAGES ══ */
+.page { display: none; padding-top: 56px; min-height: 100vh; }
+.page.active { display: block; }
+
+/* ══ HERO ══ */
+.hero {
+  background: linear-gradient(135deg, #1A1A2A 0%, #1555A0 100%);
+  color: #fff;
+  padding: 64px 40px 56px;
+  text-align: center;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 18px;
+  border-radius: 30px;
+  margin-bottom: 22px;
+  letter-spacing: 0.05em;
+}
+.hero h1 {
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 900;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+.hero h1 span { color: #F0C040; }
+.hero p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 36px;
+}
+.hero-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.hero-card {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 12px;
+  padding: 14px 22px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s;
+  text-align: left;
+  min-width: 180px;
+}
+.hero-card:hover {
+  background: rgba(255,255,255,0.22);
+  transform: translateY(-2px);
+}
+.hero-card .num {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #F0C040;
+  letter-spacing: 0.12em;
+  margin-bottom: 4px;
+}
+
+/* ══ CONTAINER ══ */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ══ SECTION HEADER ══ */
+.sec-header {
+  padding: 48px 0 8px;
+}
+.sec-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--blue);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.sec-title {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 900;
+  line-height: 1.3;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.sec-desc {
+  font-size: 17px;
+  color: var(--text2);
+  line-height: 1.8;
+  margin-bottom: 36px;
+  max-width: 680px;
+}
+.red-bar {
+  width: 44px; height: 4px;
+  background: var(--red);
+  border-radius: 2px;
+  margin-bottom: 32px;
+}
+
+/* ══ SUB NAV (페이지 내 탭) ══ */
+.subnav {
+  background: var(--white);
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 56px;
+  z-index: 100;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.subnav::-webkit-scrollbar { display: none; }
+.subnav-inner {
+  display: flex;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.subnav-inner a {
+  display: block;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text2);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+.subnav-inner a:hover { color: var(--blue); }
+.subnav-inner a.active {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+/* ══ CARDS ══ */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 28px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.card-body {
+  font-size: 17px;
+  color: var(--text2);
+  line-height: 1.85;
+}
+.card-body strong { color: var(--text); font-weight: 800; }
+.card-body .hl-red { color: var(--red); font-weight: 800; }
+.card-body .hl-green { color: var(--green); font-weight: 800; }
+.card-body .hl-blue { color: var(--blue); font-weight: 800; }
+
+/* 번호 카드 */
+.num-cards { display: flex; flex-direction: column; gap: 16px; }
+.num-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 24px 24px 20px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  box-shadow: var(--shadow);
+}
+.num-circle {
+  min-width: 38px; height: 38px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.num-circle.red { background: var(--red); }
+.num-circle.green { background: var(--green); }
+.num-content {}
+.num-title {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.num-desc {
+  font-size: 17px;
+  color: var(--text2);
+  line-height: 1.85;
+}
+.num-desc strong { color: var(--text); font-weight: 800; }
+.num-desc .hl-red { color: var(--red); font-weight: 800; }
+.num-desc .hl-green { color: var(--green); font-weight: 800; }
+
+/* ══ 비교표 ══ */
+.compare-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.cmp-card {
+  border-radius: 16px;
+  padding: 24px 20px;
+  border: 2px solid transparent;
+}
+.cmp-card.old {
+  background: #FFF5F5;
+  border-color: #F0AAAA;
+}
+.cmp-card.new {
+  background: #F0FAF4;
+  border-color: #88CCA4;
+}
+.cmp-label {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+.cmp-card.old .cmp-label { color: var(--red); }
+.cmp-card.new .cmp-label { color: var(--green); }
+.cmp-row { margin-bottom: 14px; }
+.cmp-who { font-size: 14px; color: var(--text3); margin-bottom: 4px; }
+.cmp-amt {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.cmp-card.old .cmp-amt { color: var(--text); }
+.cmp-amt.red { color: var(--red); }
+.cmp-amt.green { color: var(--green); }
+.cmp-note {
+  font-size: 14px;
+  color: var(--text3);
+  line-height: 1.7;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+.sol-box {
+  background: #EEF6FF;
+  border: 1px solid #A8C8F0;
+  border-radius: 14px;
+  padding: 20px 22px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.sol-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+.sol-text { font-size: 17px; color: var(--text); line-height: 1.85; }
+.sol-text strong { color: var(--blue); font-weight: 800; }
+
+/* ══ 의혹반박 ══ */
+.refute-item {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+.ri-claim {
+  background: #FFF0F0;
+  border-left: 4px solid var(--red);
+  padding: 16px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.ri-fact {
+  background: #F4FCF6;
+  border-left: 4px solid var(--green);
+  padding: 16px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.ri-lbl {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+.ri-lbl.claim { background: #FFCCCC; color: var(--red); }
+.ri-lbl.fact { background: #BBEECC; color: var(--green); }
+.ri-text { font-size: 17px; color: var(--text); line-height: 1.85; }
+.ri-text strong { font-weight: 800; }
+
+/* ══ 케이스 박스 ══ */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.case-box {
+  border-radius: 14px;
+  padding: 20px 16px;
+  border: 2px solid transparent;
+}
+.case-box.bad { background: #FFF3F3; border-color: #FFAAAA; }
+.case-box.mid { background: #FFFBEE; border-color: #EEC860; }
+.case-box.good { background: #F2FAF5; border-color: #88CCAA; }
+.case-verdict {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.case-box.bad .case-verdict { background: #FFCCCC; color: var(--red); }
+.case-box.mid .case-verdict { background: #FFE8AA; color: #8B5E00; }
+.case-box.good .case-verdict { background: #BBEECC; color: var(--green); }
+.case-title {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  color: var(--text);
+}
+.case-desc { font-size: 15px; color: var(--text2); line-height: 1.75; }
+
+/* ══ 타임라인 ══ */
+.tl-wrap { display: flex; flex-direction: column; }
+.tl-item { display: flex; gap: 0; }
+.tl-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100px;
+  min-width: 100px;
+  padding-top: 3px;
+  padding-right: 14px;
+  flex-shrink: 0;
+}
+.tl-date {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text3);
+  line-height: 1.55;
+  text-align: right;
+  word-break: keep-all;
+}
+.tl-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22px;
+  min-width: 22px;
+  flex-shrink: 0;
+}
+.tl-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #CCCCCC;
+  border: 3px solid var(--bg);
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+.tl-dot.done { background: var(--green); }
+.tl-dot.active { background: var(--red); box-shadow: 0 0 0 4px rgba(224,48,48,0.18); }
+.tl-vline {
+  width: 2px;
+  background: #CCCCCC;
+  flex: 1;
+  min-height: 20px;
+  margin-top: 3px;
+}
+.tl-item:last-child .tl-vline { display: none; }
+.tl-right {
+  flex: 1;
+  min-width: 0;
+  padding: 0 0 28px 14px;
+}
+.tl-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+}
+.tl-tag.done { background: #BBEECC; color: var(--green); }
+.tl-tag.warn { background: #FFCCCC; color: var(--red); }
+.tl-tag.now { background: #CCE4FF; color: var(--blue); }
+.tl-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.tl-desc { font-size: 16px; color: var(--text2); line-height: 1.8; }
+.tl-desc strong { color: var(--green); font-weight: 800; }
+.tl-desc em { color: var(--red); font-style: normal; font-weight: 800; }
+
+/* ══ 검증 배지 ══ */
+.verify-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.vcard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 18px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.vcard-num {
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--red);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+.vcard-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.vcard-desc { font-size: 14px; color: var(--text3); line-height: 1.7; margin-bottom: 14px; }
+.vcard-result {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #BBEECC;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+/* ══ 일정표 ══ */
+.schedule-month {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.schedule-month-hdr {
+  background: var(--blue);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+  padding: 14px 22px;
+}
+.schedule-item {
+  display: flex;
+  gap: 16px;
+  padding: 14px 22px;
+  border-top: 1px solid var(--border);
+  align-items: flex-start;
+}
+.schedule-date {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--blue);
+  min-width: 100px;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+.schedule-desc { font-size: 16px; color: var(--text); line-height: 1.75; }
+
+/* ══ 인용박스 ══ */
+.quote-box {
+  background: #F8F6F2;
+  border-left: 5px solid var(--gold);
+  border-radius: 0 14px 14px 0;
+  padding: 24px 28px;
+  margin-bottom: 18px;
+}
+.quote-mark { font-size: 48px; color: #CCBB88; line-height: 1; margin-bottom: 6px; font-family: Georgia, serif; }
+.quote-text { font-size: 17px; color: var(--text2); line-height: 1.9; font-style: italic; margin-bottom: 12px; }
+.quote-who { font-size: 14px; color: var(--text3); font-weight: 700; }
+
+/* ══ 결론 배너 ══ */
+.result-banner {
+  background: var(--dark);
+  color: #fff;
+  border-radius: 18px;
+  padding: 36px 32px;
+  text-align: center;
+  margin: 32px 0;
+}
+.result-banner h3 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 14px;
+  line-height: 1.45;
+}
+.result-banner p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.9;
+}
+.result-banner p strong { color: #6EE08A; font-weight: 800; }
+
+/* ══ 파스칼 인용 ══ */
+.pascal {
+  background: #1E1E32;
+  color: rgba(255,255,255,0.88);
+  border-radius: 18px;
+  padding: 40px 36px;
+  margin: 28px 0;
+  font-size: 17px;
+  line-height: 1.95;
+  font-style: italic;
+}
+.pascal .pascal-num {
+  font-size: 52px;
+  font-weight: 900;
+  color: #F0C040;
+  font-family: Georgia, serif;
+  line-height: 1;
+  margin-bottom: 16px;
+  font-style: normal;
+}
+.pascal-src { font-size: 14px; color: rgba(255,255,255,0.45); margin-top: 16px; font-style: normal; }
+
+/* ══ INFO BOX ══ */
+.info-box {
+  background: #EEF4FF;
+  border: 1px solid #A0BFEE;
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: var(--text);
+  line-height: 1.85;
+}
+.info-box strong { color: var(--blue); font-weight: 800; }
+.warn-box {
+  background: #FFF8EE;
+  border: 1px solid #EEC870;
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: var(--text);
+  line-height: 1.85;
+}
+.warn-box strong { color: var(--gold); font-weight: 800; }
+
+/* ══ 구분선 ══ */
+.divider { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+
+/* ══ 페이지 하단 패딩 ══ */
+.page-bottom { height: 64px; }
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .hero { padding: 40px 20px 36px; }
+  .topnav-logo { font-size: 13px; }
+  .compare-wrap { grid-template-columns: 1fr; }
+  .case-grid { grid-template-columns: 1fr; }
+  .verify-grid { grid-template-columns: 1fr; }
+  .tl-left { width: 72px; min-width: 72px; padding-right: 10px; }
+  .tl-date { font-size: 11px; }
+  .tl-right { padding-left: 10px; }
+  .container { padding: 0 16px; }
+  .card { padding: 20px 18px; }
+  .num-card { padding: 18px 16px; gap: 14px; }
+  .schedule-item { flex-direction: column; gap: 4px; }
+  .schedule-date { min-width: auto; }
+  .result-banner { padding: 28px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ TOP NAV ══ -->
+<nav id="topnav">
+  <div class="topnav-logo">봉천<span>4-1-2</span> 조합</div>
+  <ul class="topnav-menu">
+    <li><a href="#" onclick="showPage('home');return false;" id="nav-home" class="active">🏠 홈</a></li>
+
+    <li class="dropdown-wrap">
+      <a href="#" onclick="showPage('progress');return false;" id="nav-progress">📋 진행 예정 사항 ▾</a>
+      <div class="dropdown">
+        <a href="#" onclick="showPage('progress');scrollToSub('p-intro');return false;">① 이주비 이자</a>
+        <a href="#" onclick="showPage('progress');scrollToSub('p-method');return false;">② 추가분담금 방식 변경</a>
+        <a href="#" onclick="showPage('progress');scrollToSub('p-compare');return false;">③ 방식 비교</a>
+        <a href="#" onclick="showPage('progress');scrollToSub('p-minimize');return false;">④ 피해 최소화</a>
+        <a href="#" onclick="showPage('progress');scrollToSub('p-final');return false;">⑤ 최종 결론</a>
+        <a href="#" onclick="showPage('progress');scrollToSub('p-agree');return false;">⑥ 구청 합의</a>
+        <a href="#" onclick="showPage('progress');scrollToSub('p-schedule');return false;">⑦ 앞으로 일정</a>
+      </div>
+    </li>
+
+    <li><a href="#" onclick="showPage('core');return false;" id="nav-core">⚡ 핵심 쟁점</a></li>
+
+    <li><a href="#" onclick="showPage('doubt');return false;" id="nav-doubt">🔍 의혹 & 불법 논란</a></li>
+
+    <li><a href="#" onclick="showPage('ipdae');return false;" id="nav-ipdae">🏢 입주자대표회의 문제</a></li>
+
+    <li class="dropdown-wrap">
+      <a href="#" onclick="showPage('detail');return false;" id="nav-detail">📅 세부 진행경과 ▾</a>
+      <div class="dropdown">
+        <a href="#" onclick="showPage('detail');scrollToSub('d-timeline');return false;">사건 타임라인</a>
+        <a href="#" onclick="showPage('detail');scrollToSub('d-president');return false;">조합장 당시 상황</a>
+        <a href="#" onclick="showPage('detail');scrollToSub('d-verify');return false;">3중 검증 결과</a>
+      </div>
+    </li>
+
+    <li><a href="#" onclick="showPage('closing');return false;" id="nav-closing">✉️ 맺음말</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     PAGE: HOME
+══════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-badge">봉천동 4-1-2구역 주택재개발정비사업조합</div>
+    <h1>조합원 여러분께<br><span>꼭 알려드립니다</span></h1>
+    <p>지난 1년간의 진행 상황과 불법 의혹에 대한 사실,<br>앞으로의 일정을 쉽게 정리했습니다.</p>
+    <div class="hero-cards">
+      <div class="hero-card" onclick="showPage('core')">
+        <span class="num">PART 0</span>
+        ⚡ 핵심 쟁점<br>이주비 이자가 왜 중요한가
+      </div>
+      <div class="hero-card" onclick="showPage('progress')">
+        <span class="num">PART 1</span>
+        📋 진행 예정 사항<br>이주비·추가분담금·일정
+      </div>
+      <div class="hero-card" onclick="showPage('doubt')">
+        <span class="num">PART 2</span>
+        🔍 의혹 & 불법 논란<br>사실과 다른 주장들
+      </div>
+      <div class="hero-card" onclick="showPage('ipdae')">
+        <span class="num">PART 3</span>
+        🏢 입주자대표회의<br>무엇이 문제였나
+      </div>
+      <div class="hero-card" onclick="showPage('detail')">
+        <span class="num">PART 4</span>
+        📅 세부 진행경과<br>그동안 무슨 일이 있었나
+      </div>
+      <div class="hero-card" onclick="showPage('closing')">
+        <span class="num">PART 5</span>
+        ✉️ 맺음말<br>조합의 다짐
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label">핵심 요약</div>
+      <h2 class="sec-title">결론부터 말씀드립니다</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <div class="num-cards" style="margin-bottom:40px;">
+      <div class="num-card">
+        <div class="num-circle green">1</div>
+        <div class="num-content">
+          <div class="num-title">이주비 이자 — 본인 부담 유지</div>
+          <div class="num-desc">2023년 12월 조합총회에서 결정한 대로 이자는 각자 부담합니다. <span class="hl-red">무이자로 되돌리는 것은 없습니다.</span></div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle green">2</div>
+        <div class="num-content">
+          <div class="num-title">추가로 낼 돈 계산 방식 변경</div>
+          <div class="num-desc"><span class="hl-green"></span>조합의 기존 방식은 법적으로 문제없고 오히려 더 공평했습니다. 그러나 구청이 조합설립동의서 양식의 예시문 방식을 요구하므로, <span class="hl-blue">빠른 마무리를 위해 수긍했습니다.</span></div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle green">3</div>
+        <div class="num-content">
+          <div class="num-title">조합과 조합원이 함께 만든 결과</div>
+          <div class="num-desc">조합원분들의 빠른 입주 협조 덕분에 PF대출이자등의 비용을 절감했습니다. <span class="hl-green">이 절약분을 돌려드려 비율을 97%수준으로 높였습니다.</span><br><span style="font-size:15px; color:var(--text3);">(관처총회 24년 12월, PF대출 상환 25년 4월)</span></div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle red">4</div>
+        <div class="num-content">
+          <div class="num-title">불법 주장 — 전부 사실 아님</div>
+          <div class="num-desc">수십 번의 경찰 조사, 서울시 실태조사, 법무법인 법률검토 — <span class="hl-green">모두 혐의없음·이상없음.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-banner">
+      <h3>2026년 3월 27일<br>구청과 최종 합의 완료</h3>
+      <p>구청이 동의한 방향으로 진행하므로<br><strong>관리처분변경 인가 및 이전고시까지 문제없이 진행됩니다.</strong></p>
+    </div>
+  </div>
+  <div class="page-bottom"></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: PROGRESS (진행 예정 사항)
+══════════════════════════════════════════ -->
+<div class="page" id="page-progress">
+  <div class="subnav">
+    <div class="subnav-inner">
+      <a href="#p-intro" class="active">① 이주비 이자</a>
+      <a href="#p-method">② 방식 변경</a>
+      <a href="#p-compare">③ 방식 비교</a>
+      <a href="#p-minimize">④ 피해 최소화</a>
+      <a href="#p-final">⑤ 최종 결론</a>
+      <a href="#p-agree">⑥ 구청 합의</a>
+      <a href="#p-schedule">⑦ 앞으로 일정</a>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- ① 이주비 이자 -->
+    <div id="p-intro" class="sec-header">
+      <div class="sec-label">① 이주비 이자</div>
+      <h2 class="sec-title">이주비 이자,<br>본인 부담 그대로 유지됩니다</h2>
+      <div class="red-bar"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">🏦 기본이주비(이사 나갈 때 빌려 쓴 돈)란?</div>
+      <div class="card-body">재개발로 이사할 때 신한은행에서 빌린 돈입니다. 이 돈에 붙는 이자를 <strong>누가 낼지</strong>가 쟁점이었습니다.</div>
+    </div>
+    <div class="num-cards" style="margin-bottom:32px;">
+      <div class="num-card">
+        <div class="num-circle">1</div>
+        <div class="num-content">
+          <div class="num-title">2023년 전체 회의에서 결정</div>
+          <div class="num-desc">조합원 전체가 참여한 총회에서 "이자는 각자 부담한다"고 의결했습니다. 이 결정은 법적으로 유효합니다.</div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle red">2</div>
+        <div class="num-content">
+          <div class="num-title">일부 조합원 주장 — "되돌려야 한다"</div>
+          <div class="num-desc">"장래효(앞으로만 효력이 생긴다는 원칙)"를 근거로 과거분 이자를 조합이 내줘야 한다고 주장했습니다.</div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle green">3</div>
+        <div class="num-content">
+          <div class="num-title">결론 — 주장은 틀렸습니다</div>
+          <div class="num-desc">법원 판례와 구청 확인 결과, 총회에서 명확히 결정한 내용은 과거분도 정산할 수 있습니다. <span class="hl-green">무이자로 되돌리는 것은 없습니다.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <strong>쉬운 비유로 이해하기 :</strong> 회사에서 임금 협상이 늦어져 12월에 "1월부터 월급 50만원 인상"으로 합의했다면, 1~11월분 차액도 당연히 정산받습니다. 조합의 방식도 이것과 같습니다. 과거를 불법으로 만드는 게 아니라, 새로운 결정에 따라 차액을 정산하는 것입니다.
+    </div>
+
+    <div class="divider" id="p-method"></div>
+
+    <!-- ② 방식 변경 -->
+    <div class="sec-header">
+      <div class="sec-label">② 추가분담금 방식 변경</div>
+      <h2 class="sec-title">조합 방식은 틀리지 않았습니다.<br>그래도 수긍했습니다.</h2>
+      <div class="red-bar"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">📌 왜 방식을 바꾸나요?</div>
+      <div class="card-body">
+        조합이 기존에 사용한 방식(최대최소 보정방식)은 <strong>법적으로 문제가 없습니다.</strong><br>
+        오히려 공용시설(조경·커뮤니티 등)을 모두가 똑같이 누리는 혜택에 대해, <strong>모두가 최소한의 비용을 나눠 부담하는 더 공평한 방식</strong>이었습니다.<br><br>
+        그러나 구청이 집값 비율(비례율) 방식을 요구했고, 조합은 <strong>법적 싸움보다 빠른 마무리를 선택했습니다.</strong><br>
+        조합이 틀려서 바꾼 것이 아닙니다. 조합원들의 재산권을 하루라도 빨리 찾아드리기 위해 수긍한 것입니다.
+      </div>
+    </div>
+
+    <div style="background:#F0F7FF; border:1px solid #A0C4EE; border-radius:14px; padding:20px 22px; margin-bottom:18px; display:flex; gap:14px; align-items:flex-start;">
+      <div style="font-size:22px; flex-shrink:0;">⚖️</div>
+      <div style="font-size:17px; color:var(--text); line-height:1.85;">
+        <strong>조합의 판단 :</strong> 비례율 방식이 형평성 면에서 더 불리하지만, 이 문제로 구청과 다투다가 수개월~수 년이 더 걸리는 것보다 <strong>수긍하고 빠르게 등기를 마치는 것이 조합원에게 훨씬 이롭습니다.</strong> 대신 비례율을 최대한 높여 고액권리자 피해를 최소화합니다.
+      </div>
+    </div>
+
+    <div class="info-box">
+      <strong>추가분담금이란?</strong> 아파트 공사비가 예상보다 더 들어서 조합원이 추가로 내야 하는 돈입니다. 이 돈을 어떻게 나눠서 낼지가 문제였습니다.
+    </div>
+
+    <div class="divider" id="p-compare"></div>
+
+    <!-- ③ 방식 비교 -->
+    <div class="sec-header">
+      <div class="sec-label">③ 방식 비교</div>
+      <h2 class="sec-title">기존 방식 vs 변경 방식,<br>뭐가 다른가요?</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <div class="compare-wrap">
+      <div class="cmp-card old">
+        <div class="cmp-label">▶ 기존 방식 (최대최소 보정)</div>
+        <div class="cmp-row">
+          <div class="cmp-who">집값 낮은 분 (종전가액 0원)</div>
+          <div class="cmp-amt">약 2,400만 원</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-who">집값 높은 분 (약 20억 기준)</div>
+          <div class="cmp-amt">약 4,600만 원</div>
+        </div>
+        <div class="cmp-note">모두 비슷하게 부담. 최대-최소 격차 약 4천만 원.</div>
+      </div>
+      <div class="cmp-card new">
+        <div class="cmp-label">▶ 변경 방식 (집값 비율)</div>
+        <div class="cmp-row">
+          <div class="cmp-who">집값 낮은 분 (종전가액 0원)</div>
+          <div class="cmp-amt green">0원</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-who">집값 높은 분 (약 20억 기준)</div>
+          <div class="cmp-amt red">약 2억 8천만 원</div>
+        </div>
+        <div class="cmp-note">집값 높은 분만 집중 부담. 격차 최대 2억 8천만 원.</div>
+      </div>
+    </div>
+
+    <div style="background:#FFF8E0; border:2px solid #E8C840; border-radius:14px; padding:20px 22px; margin-bottom:20px;">
+      <div style="font-size:17px; color:var(--text); line-height:1.85;">
+        <strong>⚠️ 중요 :</strong> 조합의 기존 방식(왼쪽)이 <strong>오히려 더 공평합니다.</strong> 공용시설 혜택은 모두가 똑같이 누리는데, 집값 비율로 부담하는 것이 왜 공평합니까?<br><br>
+        조합은 이 방식이 틀렸기 때문에 바꾸는 것이 아닙니다. <strong>구청의 요구에 수긍하고, 더 빠르게 등기를 마치기 위한 선택입니다.</strong> 대신 비례율을 최대한 높여 피해를 줄입니다.
+      </div>
+    </div>
+
+    <div class="divider" id="p-minimize"></div>
+
+    <!-- ④ 함께 만든 결과 -->
+    <div class="sec-header">
+      <div class="sec-label">④ 함께 만든 결과</div>
+      <h2 class="sec-title">잘 준비했고,<br>잘 협조해주셨습니다</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <div class="sol-box">
+      <div class="sol-icon">🤝</div>
+      <div class="sol-text">조합원분들의 협조 덕분에 PF대출이자 절감 등의 비용을 아낄 수 있었습니다. <strong>이 절약분을 조합원에게 최대한 돌려드려 비율(비례율)을 97% 수준까지 높입니다.</strong> 이것은 조합과 조합원이 함께 만들어낸 결과입니다.</div>
+    </div>
+
+    <!-- 예비비 성과 카드 -->
+    <div style="background: linear-gradient(135deg, #0F3460 0%, #1555A0 100%); border-radius: 18px; padding: 32px 28px; margin-bottom: 18px; color: #fff;">
+      <div style="font-size: 20px; font-weight: 900; color: #F0C040; margin-bottom: 20px;">🏆 조합과 조합원이 함께 이룬 성과입니다</div>
+
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 16px 18px; border-left: 4px solid #F0C040;">
+          <div style="font-size: 16px; font-weight: 800; color: #F0C040; margin-bottom: 6px;">조합의 역할 — 철저한 위험 대비</div>
+          <div style="font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.8;">재개발 사업에는 언제 어떤 비용이 생길지 모릅니다. 조합은 PF 대출 이자(월 약 4억 원), 시공사 추가 공사비 요구, 법인세 등을 대비한 예비비를 미리 확보해두었습니다. 이는 조합이 마땅히 해야 할 책임 있는 사업 관리였습니다.</div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 16px 18px; border-left: 4px solid #6EE08A;">
+          <div style="font-size: 16px; font-weight: 800; color: #6EE08A; margin-bottom: 6px;">조합원의 역할 — 신속한 입주로 비용 절감</div>
+          <div style="font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.8;">조합원분들이 협조적으로 빠르게 입주를 완료해 주셨습니다. 덕분에 PF 대출을 예상보다 훨씬 일찍 상환할 수 있었고, 매월 발생하던 수억 원의 이자 부담이 크게 줄었습니다.</div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 16px 18px; border-left: 4px solid #93C5FD;">
+          <div style="font-size: 16px; font-weight: 800; color: #93C5FD; margin-bottom: 6px;">현대건설의 협조 — 추가 공사비 요구 없음</div>
+          <div style="font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.8;">시공사가 입주 직전 추가 공사비를 요구하는 경우가 종종 있습니다. 우리 조합은 다행히 이런 상황이 발생하지 않아, 대비해둔 예비비를 사용하지 않을 수 있었습니다.</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding: 16px 18px; background: rgba(240,192,64,0.15); border-radius: 12px; border: 1px solid rgba(240,192,64,0.4); font-size: 17px; color: #fff; line-height: 1.8;">
+        이 세 가지가 맞물려 <strong style="color: #F0C040;">상당한 비용을 절약</strong>할 수 있었습니다.<br>
+        조합이 잘 관리하고, 조합원이 함께 협조한 덕분에 만들어진 결과입니다.<br>
+        이 절약분을 조합원에게 돌려드려 형평성을 높이는 것, 그것이 이번 방향입니다.
+      </div>
+    </div>
+
+    <div class="divider" id="p-final"></div>
+
+    <!-- ⑤ 최종 결론 -->
+    <div class="sec-header">
+      <div class="sec-label">⑤ 최종 결론</div>
+      <h2 class="sec-title">1년 전 조합이 원했던 방향,<br>결국 그대로 가게 됐습니다</h2>
+      <div class="red-bar"></div>
+    </div>
+    <div class="case-grid">
+      <div class="case-box bad">
+        <div class="case-verdict">❌ 포기한 방안</div>
+        <div class="case-title">1안 — 일부 조합원 주장</div>
+        <div class="case-desc">유이자를 무이자로 되돌리고, 추가분담금도 모두 환급. → 조합 금융파산 위기 발생.</div>
+      </div>
+      <div class="case-box mid">
+        <div class="case-verdict">⏱ 오래 걸리는 방안</div>
+        <div class="case-title">2안 — 법적 판단 대기</div>
+        <div class="case-desc">법원에서 판단을 받는 방식. 수 년이 소요되어 현실적으로 어려움.</div>
+      </div>
+      <div class="case-box good">
+        <div class="case-verdict">✅ 최종 채택</div>
+        <div class="case-title">3안 — 조합 원안</div>
+        <div class="case-desc">절약된 돈을 돌려드리고, 구청과 합의하여 신속하게 등기 마무리.</div>
+      </div>
+    </div>
+
+    <div class="divider" id="p-agree"></div>
+
+    <!-- ⑥ 구청 합의 -->
+    <div class="sec-header">
+      <div class="sec-label">⑥ 구청 합의</div>
+      <h2 class="sec-title">구청도 동의했습니다</h2>
+      <div class="red-bar"></div>
+    </div>
+    <div class="result-banner">
+      <h3>2026년 3월 27일<br>관악구청과 최종안 합의 완료</h3>
+      <p>"구청 말을 들어야 한다"고 주장하셨던 분들, 지금 진행 방향은<br><strong>구청이 직접 동의한 방안입니다.</strong></p>
+    </div>
+
+    <div class="divider" id="p-schedule"></div>
+
+    <!-- ⑦ 일정 -->
+    <div class="sec-header">
+      <div class="sec-label">⑦ 앞으로 일정</div>
+      <h2 class="sec-title">앞으로 진행 일정</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <div class="schedule-month">
+      <div class="schedule-month-hdr">📅 4월 일정</div>
+      <div class="schedule-item">
+        <div class="schedule-date">4월 06일 ~ 12일</div>
+        <div class="schedule-desc">조합원 소식지준비 및 발송</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-date">4월 13일 ~ 26일</div>
+        <div class="schedule-desc">안건 준비기간(안건정리, 제안사유 확정· 예산안 확정·관리처분변경(안) 확정</div>
+      </div>
+	   <div class="schedule-item">
+        <div class="schedule-date">4월 27일</div>
+        <div class="schedule-desc">이사회 개최 — 예산안·관리처분변경안·분담금 의결·총회업체선정·홍보직원채용 등</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-date">4월 30일</div>
+        <div class="schedule-desc">대의원회 개최 공고 및 회의 자료 발송</div>
+      </div>
+    </div>
+
+    <div class="schedule-month">
+      <div class="schedule-month-hdr">📅 5월 일정</div>
+	   <div class="schedule-item">
+        <div class="schedule-date">5월 09일</div>
+        <div class="schedule-desc">대의원회 개최 — 예산안·관리처분변경안·분담금 의결·총회업체선정·홍보직원채용 등</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-date">5월 11일</div>
+        <div class="schedule-desc">총회 책자 인쇄 의뢰 및 홍보직원 채용공고</div>
+      </div>
+ <div class="schedule-item">
+        <div class="schedule-date">5월 20일</div>
+        <div class="schedule-desc">총회 개최 공고 및 관리처분변경 공람공고 (30일 이상 진행)</div>
+      </div>
+	 </div>
+	 
+    <div class="schedule-month">
+      <div class="schedule-month-hdr">📅 6월 일정</div>
+      <div class="schedule-item">
+        <div class="schedule-date">6월 20일</div>
+        <div class="schedule-desc">정기총회 및 관리처분계획변경 총회 개최</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-date">6월 29일</div>
+        <div class="schedule-desc">관리처분계획 접수 예정(행정 접수(세움터))</div>
+      </div>
+	  <div class="schedule-item">
+        <div class="schedule-date">6월 30일</div>
+        <div class="schedule-desc">관련부서 협의(한국 부동산원-타당성 검증 포함)</div>
+      </div>
+	 </div>
+	 
+	   <div class="schedule-month">
+      <div class="schedule-month-hdr">📅 10월 일정</div>
+      <div class="schedule-item">
+        <div class="schedule-date">10월 초</div>
+        <div class="schedule-desc">관리처분계획인가</div>
+      </div>
+	    <div class="schedule-item">
+        <div class="schedule-date">10월 중</div>
+        <div class="schedule-desc">이전고시</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="page-bottom"></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: CORE (핵심 쟁점)
+══════════════════════════════════════════ -->
+<div class="page" id="page-core">
+  <div class="subnav">
+    <div class="subnav-inner">
+      <a href="#c-why" class="active">⚡ 왜 중요한가</a>
+      <a href="#c-contract">📄 계약서가 말해주는 것</a>
+      <a href="#c-what">💰 금액으로 보면</a>
+      <a href="#c-logic">⚖️ 핵심 논리</a>
+      <a href="#c-result">✅ 최종 결론</a>
+    </div>
+  </div>
+
+  <div class="container">
+
+ <!-- 왜 중요한가 -->
+    <div id="c-why" class="sec-header">
+      <div class="sec-label">핵심 쟁점</div>
+      <h2 class="sec-title">이주비 이자 방식,<br>왜 이게 가장 중요한가요?</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <!-- 개념 설명 카드 -->
+    <div class="card" style="border-left: 5px solid var(--blue); margin-bottom:20px;">
+      <div class="card-title">🏦 기본이주비(이주 때 빌린 돈)란?</div>
+      <div class="card-body">
+        재개발로 이사를 나가야 할 때, 조합원분들이 <strong>신한은행에서 빌린 돈</strong>입니다.<br>
+        이 돈에는 당연히 이자가 붙는데 — <strong>이 이자를 누가 낼지</strong>가 이번 핵심 쟁점입니다.
+      </div>
+    </div>
+
+    <div class="tl-wrap" style="margin-bottom:32px;">
+
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">2018년<br>5월</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">최초 계약</div>
+          <div class="tl-title">시공사(현대건설)가 이주비 이자 부담</div>
+          <div class="tl-desc">최초 도급계약서 제17조에 <strong>현대건설이 기본이주비 이자를 부담</strong>하기로 명시. 배OO 전 조합장이 계약.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">2021년<br>12월</div></div>
+        <div class="tl-spine"><div class="tl-dot" style="background:var(--red);"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag warn">이번 논란의 출발점</div>
+          <div class="tl-title">배OO 전 조합장, 변경계약으로 이자 부담 전가</div>
+          <div class="tl-desc">이주비 이자 부담을 <strong style="color:var(--red);">시공사 → 조합 사업비</strong>로 변경. 결국 조합원 전체의 돈으로 이자를 내게 됐습니다.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">2023년<br>12월</div></div>
+        <div class="tl-spine"><div class="tl-dot" style="background:var(--gold);"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag" style="background:#FFE8AA; color:#8B5E00;">총회 의결</div>
+          <div class="tl-title">12월 조합총회 — 유이자(각자 부담)로 전환</div>
+          <div class="tl-desc">조합 사업비 부담이 커지자 조합원 전체 회의에서 <strong>"이자는 본인이 부담한다"</strong>고 의결했습니다.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">2024년~<br>2025년</div></div>
+        <div class="tl-spine"><div class="tl-dot" style="background:var(--red);"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag warn">논란</div>
+          <div class="tl-title">일부 조합원 — "다시 무이자로 돌려라"</div>
+          <div class="tl-desc">장래효(앞으로만 효력이 생긴다는 원칙)를 근거로 과거분까지 조합이 내줘야 한다고 주장. 1년 넘게 논란 지속.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">2026년<br>3월</div></div>
+        <div class="tl-spine"><div class="tl-dot active"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag now">최종 합의</div>
+          <div class="tl-title">구청, 유이자 소급 방식 최종 인정</div>
+          <div class="tl-desc"><strong>조합의 유이자 유지 방향을 구청이 공식 인정.</strong> 관리처분변경인가 및 총회 의결 진행 예정.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 도급계약서 근거 섹션 -->
+    <div id="c-contract" class="sec-header" style="padding-top:8px;">
+      <div class="sec-label">계약서가 말해주는 것</div>
+      <h2 class="sec-title">문제의 출발점을<br>짚습니다</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <!-- 계약 변경 비교표 -->
+    <div style="background:#1A1A2A; border-radius:18px; padding:28px 28px; margin-bottom:20px;">
+      <div style="font-size:18px; font-weight:900; color:#F0C040; margin-bottom:20px; text-align:center;">📄 도급계약서 제17조 — 이주비 이자 부담 변화</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+        <div style="background:rgba(46,213,115,0.12); border:1px solid rgba(46,213,115,0.3); border-radius:14px; padding:20px 18px;">
+          <div style="font-size:13px; font-weight:800; color:#6EE08A; margin-bottom:10px; letter-spacing:0.05em;">2018년 최초 계약 (배OO 전 조합장)</div>
+          <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:10px;">이주비 이자 부담<br><span style="color:#6EE08A; font-size:22px;">현대건설</span></div>
+          <div style="font-size:14px; color:rgba(255,255,255,0.65); line-height:1.75;">제17조②에 시공사가 조합원을 대신하여 이자를 납부하기로 명시</div>
+        </div>
+        <div style="background:rgba(233,69,96,0.12); border:1px solid rgba(233,69,96,0.3); border-radius:14px; padding:20px 18px;">
+          <div style="font-size:13px; font-weight:800; color:#F87171; margin-bottom:10px; letter-spacing:0.05em;">2021년 변경계약 (배OO 전 조합장)</div>
+          <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:10px;">이주비 이자 부담<br><span style="color:#F87171; font-size:22px;">조합 사업비</span></div>
+          <div style="font-size:14px; color:rgba(255,255,255,0.65); line-height:1.75;">시공사 부담이 조합 사업비로 전가 — 조합원 전체가 이자를 부담하는 구조로 변경</div>
+        </div>
+      </div>
+      <div style="margin-top:16px; text-align:center; font-size:28px; color:#F0C040;">↓</div>
+      <div style="background:rgba(255,255,255,0.06); border-radius:12px; padding:16px 18px; margin-top:8px; text-align:center;">
+        <div style="font-size:16px; font-weight:800; color:#F0C040; margin-bottom:6px;">2023년 총회</div>
+        <div style="font-size:15px; color:rgba(255,255,255,0.8); line-height:1.75;">사업비 부담 증가 → 조합원 본인 부담(유이자)으로 전환 의결</div>
+      </div>
+    </div>
+
+    <div style="background:#FFF8E0; border:2px solid #E8C840; border-radius:16px; padding:22px 24px; margin-bottom:32px;">
+      <div style="font-size:17px; color:var(--text); line-height:1.9;">
+        <strong>📌 이 문제를 어떻게 처리하나요?</strong><br><br>
+        이주비 이자 문제의 근원은 <strong>2021년 배OO 전 조합장의 변경계약</strong>에 있습니다.<br>
+        현대건설이 내야 할 이자를 조합 사업비로 떠넘긴 것이 논란의 시작입니다.<br><br>
+
+        <strong style="color:var(--red);">❶ 이 건을 관리처분변경에 넣으면 안 됩니까?</strong><br>
+        <strong>넣어서는 안 됩니다.</strong> 현대건설에 청구할 수 있는 금액은 소송 결과에 따라 달라지는 불확실한 금액입니다. 확정되지 않은 금액을 관리처분변경안에 포함하면 두 가지 문제가 생깁니다.<br><br>
+
+        <div style="background:#FFF0F0; border-left:4px solid var(--red); border-radius:0 10px 10px 0; padding:14px 16px; font-size:16px; line-height:1.85; margin-bottom:16px;">
+          <strong style="color:var(--red);">① 등기가 언제 될지 모릅니다</strong><br>
+          소송은 1심·2심·대법원까지 수 년이 걸립니다. 소송이 끝날 때까지 관리처분변경인가를 받을 수 없고, 인가가 없으면 이전고시도, 등기도 불가능합니다. <strong>685명 조합원 모두의 재산권 행사가 무기한 지연됩니다.</strong>
+        </div>
+
+        <div style="background:#FFF0F0; border-left:4px solid var(--red); border-radius:0 10px 10px 0; padding:14px 16px; font-size:16px; line-height:1.85; margin-bottom:16px;">
+          <strong style="color:var(--red);">② 재산권을 인정받기 어려워집니다</strong><br>
+          소송 결과가 확정되지 않은 상태에서는 금액이 변동될 수 있어 구청이 관리처분변경인가를 내주기 어렵습니다. 조합원의 재산 가치가 확정되지 않은 채 남아, 매매·담보 설정 등 재산권 행사에 제약이 생깁니다.
+        </div>
+
+        <strong style="color:var(--blue);">❷ 그러면 어떻게 합니까?</strong><br>
+        이번 관리처분변경은 <strong>확정된 수치만으로 신속하게 처리해 등기를 먼저 마칩니다.</strong> 현대건설에 대한 손해배상 청구는 등기 완료 후 별도 소송으로 진행합니다. 소송을 통해 회수된 금액은 조합원에게 정산합니다.<br><br>
+
+        <div style="background:#EEF6FF; border-radius:10px; padding:14px 16px; font-size:15px; line-height:1.8; color:var(--text2);">
+          ※ 소송 결과가 불확실하다고 해서 조합원의 청구 권리가 사라지지 않습니다. 등기를 먼저 완료한 뒤 법적 절차를 통해 끝까지 권리를 주장합니다.
+        </div>
+      </div>
+    </div>
+
+    <!-- 왜 중요한지 강조 박스 -->
+    <div style="background:#FFF8E8; border:2px solid #F0C040; border-radius:18px; padding:28px 28px; margin-bottom:32px;">
+      <div style="font-size:22px; font-weight:900; color:#8B5E00; margin-bottom:14px;">⚡ 왜 이게 가장 중요한 문제인가?</div>
+      <div style="font-size:18px; color:var(--text); line-height:1.9;">
+        이주비 이자를 <strong>조합이 내주느냐 / 본인이 내느냐</strong>에 따라<br>
+        <strong style="color:var(--red); font-size:20px;">조합원 전체가 내야 할 추가분담금 총액이 크게 달라집니다.</strong><br><br>
+        조합이 이자를 대신 내주면 → 그만큼 사업비가 늘어납니다<br>
+        사업비가 늘면 → 집값 비율(비례율)이 낮아집니다<br>
+        비율이 낮아지면 → <strong>모든 조합원이 더 많은 추가분담금을 내야 합니다</strong>
+      </div>
+    </div>
+
+    <div class="divider" id="c-what"></div>
+
+    <!-- 금액으로 보면 -->
+    <div class="sec-header">
+      <div class="sec-label">금액으로 보면</div>
+      <h2 class="sec-title">숫자로 보는 차이</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <!-- 두 시나리오 비교 -->
+    <div class="compare-wrap" style="margin-bottom:20px;">
+      <div class="cmp-card old">
+        <div class="cmp-label">❌ 무이자로 되돌릴 경우</div>
+        <div class="cmp-row">
+          <div class="cmp-who">집값 비율(비례율)</div>
+          <div class="cmp-amt red">약 82%</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-who">평균 조합원 추가분담금</div>
+          <div class="cmp-amt red">약 4,800만 원</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-who">집값 높은 분 (종전가액 18억)</div>
+          <div class="cmp-amt red">약 3억 6천만 원</div>
+        </div>
+        <div class="cmp-note">이자를 조합이 내주는 만큼 사업비가 늘어나 비율이 더 떨어집니다.</div>
+      </div>
+      <div class="cmp-card new">
+        <div class="cmp-label">✅ 유이자 유지 (현재 방향)</div>
+        <div class="cmp-row">
+          <div class="cmp-who">집값 비율(비례율)</div>
+          <div class="cmp-amt green">약 97%</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-who">평균 조합원 추가분담금</div>
+          <div class="cmp-amt green">크게 줄어듦</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-who">집값 높은 분 (종전가액 18억)</div>
+          <div class="cmp-amt green">훨씬 적어짐</div>
+        </div>
+        <div class="cmp-note">본인이 이미 이자를 갚았으므로 사업비가 늘지 않습니다.</div>
+      </div>
+    </div>
+
+    <div style="background:#FFF0F0; border:2px solid #F0AAAA; border-radius:14px; padding:20px 22px; margin-bottom:20px;">
+      <div style="font-size:17px; color:var(--text); line-height:1.9;">
+        <strong style="color:var(--red);">⚠️ 장래효 적용 시 가장 큰 위험 — 소송</strong><br><br>
+        장래효를 "소급 불가"로 해석하면 조합원 간 형평성이 깨집니다.<br>
+        이주비를 빌리지 않은 분, 적게 빌린 분이 많이 빌린 분의 이자를 사업비로 대신 내주는 구조가 되기 때문입니다.<br><br>
+        <strong>도정법은 조합원 간 형평성을 가장 중요한 원칙으로 규정하고 있습니다.</strong> 이를 위배하면 피해 조합원이 소송을 제기할 수 있고, 소송이 시작되는 순간 등기까지 수 년이 더 걸립니다.<br><br>
+        조합이 유이자를 유지한 것은 이 소송 리스크를 막기 위한 판단이기도 합니다.
+      </div>
+    </div>
+
+    <div class="divider" id="c-logic"></div>
+
+    <!-- 핵심 논리 -->
+    <div class="sec-header">
+      <div class="sec-label">핵심 논리</div>
+      <h2 class="sec-title">일부 조합원 주장,<br>왜 받아들일 수 없나요?</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <div class="num-cards" style="margin-bottom:28px;">
+      <div class="num-card">
+        <div class="num-circle red">1</div>
+        <div class="num-content">
+          <div class="num-title">형평성이 무너져 소송으로 이어집니다</div>
+          <div class="num-desc">
+            장래효를 "소급 불가"로 해석하면, 이주비를 빌리지 않은 조합원이 <strong>다른 조합원의 이자를 사업비로 대신 내주는 구조</strong>가 됩니다. 빌린 금액이 적은 분이 많이 빌린 분의 고액 이자를 함께 부담하게 됩니다.<br><br>
+            이는 도정법이 가장 중요하게 여기는 <strong>조합원 간 형평성 원칙을 정면으로 위배</strong>합니다. 피해를 입은 조합원이 소송을 제기할 가능성이 높고, 소송이 시작되면 등기까지 수 년이 더 걸릴 수 있습니다.
+          </div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle red">2</div>
+        <div class="num-content">
+          <div class="num-title">계산이 사실상 불가능합니다</div>
+          <div class="num-desc">
+            대출받지 않은 조합원에게 무이자 혜택을 주려면 이자율을 계산해야 합니다.<br>
+            그런데 이주비 이자율은 <strong>조합원마다 개인 신용등급에 따라 달랐습니다.</strong> 일괄 계산이 불가능합니다.
+          </div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle red">3</div>
+        <div class="num-content">
+          <div class="num-title">세금 문제가 생깁니다</div>
+          <div class="num-desc">
+            조합이 이자를 대신 내주면 세법상 조합원이 <strong>경제적 이익을 받은 것</strong>으로 보아 배당소득세(15.4%)가 부과될 수 있습니다.<br>
+            종합소득세·건강보험료도 연동하여 오를 수 있습니다.
+          </div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle red">4</div>
+        <div class="num-content">
+          <div class="num-title">수 번의 총회가 필요해집니다</div>
+          <div class="num-desc">
+            무이자로 되돌리는 것, 이자 금액 결정, 비율 조정 등 절차마다 별도 총회가 필요합니다.<br>
+            조합장 예상으로는 <strong>총회를 3~7번</strong> 열어야 합니다. 수 년이 걸릴 수 있습니다.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 조합장 주장 논리의 핵심 -->
+    <div class="info-box">
+      <strong>결정적 모순 :</strong> 일부 조합원들은 "총회 결정은 효력이 없고 구청 인가가 있어야 한다"고 주장했습니다. 그런데 이 논리대로라면, 지금 새로 열 총회도 마찬가지로 효력이 없게 됩니다. 구청 인가 없이는 아무것도 못 하게 되는 것입니다. <strong>스스로 주장이 모순됩니다.</strong>
+    </div>
+
+    <div class="divider" id="c-result"></div>
+
+    <!-- 최종 결론 -->
+    <div class="sec-header">
+      <div class="sec-label">최종 결론</div>
+      <h2 class="sec-title">구청도 인정한<br>최종 합의 방향</h2>
+      <div class="red-bar"></div>
+    </div>
+
+    <div class="result-banner">
+      <h3>유이자 유지 + 비례율 97% 근접</h3>
+      <p>
+        이자는 이미 본인이 직접 갚은 상태 → 조합 사업비 증가 없음<br>
+        조합원의 빠른 입주 협조 → PF대출이자 절감 등 비용 절약<br>
+        절약분을 돌려드려 → 비율을 97%까지 높임<br><br>
+        <strong>조합과 조합원이 함께 만들어낸 결과입니다.</strong>
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">📌 한 줄 요약</div>
+      <div class="card-body" style="font-size:18px;">
+        이주비 이자 방식은 단순한 이자 문제가 아닙니다.<br>
+        <strong>685명 전체의 추가분담금 규모를 결정하는 가장 중요한 변수</strong>였으며,<br>
+        조합은 가장 공평하고 현실적인 방향으로 1년의 협의 끝에 구청과 합의했습니다.
+      </div>
+    </div>
+
+  </div>
+  <div class="page-bottom"></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: IPDAE (입주자대표회의 문제)
+══════════════════════════════════════════ -->
+<div class="page" id="page-ipdae">
+  <div class="subnav">
+    <div class="subnav-inner">
+      <a href="#i-what" class="active">🏢 입대의란?</a>
+      <a href="#i-actions">📋 문제 행동들</a>
+      <a href="#i-claims">❌ 주장 vs 사실</a>
+      <a href="#i-auditor">📄 내부 배포 문서</a>
+      <a href="#i-result">✅ 결론</a>
+    </div>
+  </div>
+ 
+  <div class="container">
+ 
+    <!-- 입대의란? -->
+    <div id="i-what" class="sec-header">
+      <div class="sec-label">입주자대표회의 문제</div>
+      <h2 class="sec-title">입주자대표회의,<br>무엇이 문제였나요?</h2>
+      <div class="red-bar"></div>
+    </div>
+ 
+    <!-- 역할 비교 -->
+    <div style="background:#F0F4FF; border:1px solid #A0BFEE; border-radius:16px; padding:28px; margin-bottom:24px;">
+      <div style="font-size:20px; font-weight:900; color:var(--blue); margin-bottom:16px;">입대의 vs 조합 — 역할이 완전히 다릅니다</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+        <div style="background:#fff; border-radius:12px; padding:18px; border:2px solid #FFAAAA;">
+          <div style="font-size:16px; font-weight:800; color:var(--red); margin-bottom:10px;">🏢 입주자대표회의 (입대의)</div>
+          <div style="font-size:16px; color:var(--text2); line-height:1.8;">
+            • 아파트 관리·청소·주차<br>
+            • 입주 후 생활 관련 결정<br>
+            • <strong style="color:var(--red);">재개발 사업에는 관여 권한 없음</strong>
+          </div>
+        </div>
+        <div style="background:#fff; border-radius:12px; padding:18px; border:2px solid #88CCAA;">
+          <div style="font-size:16px; font-weight:800; color:var(--green); margin-bottom:10px;">🏗️ 재개발조합</div>
+          <div style="font-size:16px; color:var(--text2); line-height:1.8;">
+            • 재개발 사업 전반 관리<br>
+            • 추가분담금·이주비 결정<br>
+            • <strong style="color:var(--green);">등기·청산·이전고시 담당</strong>
+          </div>
+        </div>
+      </div>
+      <div style="font-size:17px; color:var(--text); margin-top:16px; line-height:1.8; background:#FFF0F0; border-radius:10px; padding:14px 16px; border-left:4px solid var(--red);">
+        ⚠️ 입대의가 조합의 재개발 업무 결정에 개입하거나 조합을 불법이라고 공개 주장하는 것은 <strong>권한 범위를 벗어난 행위</strong>입니다.
+      </div>
+    </div>
+ 
+    <div class="divider" id="i-actions"></div>
+ 
+    <!-- 문제 행동들 -->
+    <div class="sec-header" style="padding-top:8px;">
+      <div class="sec-label">문제 행동들</div>
+      <h2 class="sec-title">입대의는 어떤 행동을<br>했나요?</h2>
+      <div class="red-bar"></div>
+    </div>
+ 
+    <!-- 타임라인 형식으로 -->
+    <div class="tl-wrap" style="margin-bottom:32px;">
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>7월 25일</div></div>
+        <div class="tl-spine"><div class="tl-dot" style="background:var(--red);"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag warn">1차 입장문</div>
+          <div class="tl-title">입대의 회장, 조합 통보 없이 구청 방문 후 입장문 배포</div>
+          <div class="tl-desc">입대의 회장 심OO이 조합과 사전 협의 없이 구청 주택과를 방문한 뒤 아파트 전체에 입장문을 배포했습니다.<br>주요 주장 : <em>"이주비 유이자 전환 총회 의결은 도정법 위반"</em>, <em>"구청 승인 없이 소유권 이전등기 불가"</em></div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>7월 28일</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">조합 대응</div>
+          <div class="tl-title">조합, 명예훼손 해명 공문 발송 (문서번호 2024-7-14)</div>
+          <div class="tl-desc">조합은 입대의에 공식 공문을 발송해 <strong>법적 근거를 제시하라</strong>고 요구했습니다.<br>"8월 8일까지 근거를 제시하지 않으면 명예훼손으로 고소하겠다"고 통보했습니다.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>8월</div></div>
+        <div class="tl-spine"><div class="tl-dot" style="background:var(--red);"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag warn">2차 입장문</div>
+          <div class="tl-title">입대의 회장, 2차 입장문 재배포</div>
+          <div class="tl-desc">조합의 공문 수신 이후에도 입대의는 동일한 내용의 입장문을 다시 배포했습니다.<br><em>"조합의 8월 17일 문자 고지는 매우 심각한 겁박"</em>, <em>"법적 조치 예정"</em> 등을 주장했습니다.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>9월 12일</div></div>
+        <div class="tl-spine"><div class="tl-dot" style="background:var(--red);"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag warn">단독 간담회</div>
+          <div class="tl-title">구청-입대의 단독 간담회 개최 — 조합 미통보</div>
+          <div class="tl-desc">구청이 <strong>조합에 알리지 않고</strong> 입대의와 아파트에서 단독 간담회를 열었습니다.<br>간담회에서 입대의는 구청에 11개 항목의 질의서를 제출하며 조합의 법적 문제를 주장했습니다.<br>배OO 씨가 강단에 나와 <em>조합장 해임을 시도했으나</em>, 다수 조합원들의 반대로 무산됐습니다.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>11~12월</div></div>
+        <div class="tl-spine"><div class="tl-dot" style="background:var(--red);"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag warn">내부 문서 배포</div>
+          <div class="tl-title">조OO·안OO, 구청 면담 후 문서 배포</div>
+          <div class="tl-desc">조OO과 안OO이 '25년 11월 19일 구청 주택과를 방문해 면담한 뒤, 그 내용을 정리해 조합원들에게 배포했습니다.<br><br><strong style="color:var(--red);">배포된 내용이 사실과 달랐고, 결과적으로 조합원들에게 혼란만 줬습니다.</strong><br>구청은 이후 2026년 3월 해당 문서의 주장과 반대로 조합의 방향을 최종 인정했습니다.</div>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <div class="divider" id="i-claims"></div>
+ 
+    <!-- 입대의 주장 vs 사실 -->
+    <div class="sec-header" style="padding-top:8px;">
+      <div class="sec-label">주장 vs 사실</div>
+      <h2 class="sec-title">입대의 주장,<br>사실과 어떻게 다른가요?</h2>
+      <div class="red-bar"></div>
+    </div>
+ 
+    <div class="refute-item">
+      <div class="ri-claim">
+        <span class="ri-lbl claim">입대의 주장</span>
+        <span class="ri-text">23년 총회에서 의결된 이주비 무이자→유이자 전환은 도정법 위반이다. 이주비 무이자는 조합 사업비에 포함되어야 한다.</span>
+      </div>
+      <div class="ri-fact">
+        <span class="ri-lbl fact">사실</span>
+        <span class="ri-text">조합은 "도정법 위반이라는 법적 근거를 제시하라"고 공문을 발송했습니다. <strong>입대의는 끝내 구체적인 법적 근거를 제시하지 못했습니다.</strong> 구청도 조합의 유이자 방식을 최종 인정했습니다.</span>
+      </div>
+    </div>
+ 
+    <div class="refute-item">
+      <div class="ri-claim">
+        <span class="ri-lbl claim">입대의 주장</span>
+        <span class="ri-text">225억 추가분담금은 비례율로 산출되어야 하고, 총회 의결(24년 12월) 후 구청 인가를 받은 이후에야 분담금을 걷을 수 있다. 해당 총회 의결은 관리처분 신청조차 되지 않았다.</span>
+      </div>
+      <div class="ri-fact">
+        <span class="ri-lbl fact">사실</span>
+        <span class="ri-text">조합의 최대최소 보정방식은 법적으로 문제없는 방식이었습니다. 그러나 조합은 구청과의 불필요한 마찰 없이 빠르게 마무리하기 위해 비례율 방식으로의 전환을 수긍했습니다. <strong>조합이 틀려서 바꾼 것이 아니라, 조합원의 재산권을 하루라도 빨리 찾아드리기 위한 선택이었습니다.</strong></span>
+      </div>
+    </div>
+ 
+    <div class="refute-item">
+      <div class="ri-claim">
+        <span class="ri-lbl claim">입대의 주장</span>
+        <span class="ri-text">등기 지연의 원인은 조합에 있다. 조합이 구청 시정명령을 이행하지 않고 있다.</span>
+      </div>
+      <div class="ri-fact">
+        <span class="ri-lbl fact">사실</span>
+        <span class="ri-text">입대의와 일부 조합원들의 지속적인 민원·소송 위협·허위 주장 확산이 오히려 사업 진행을 어렵게 만들었습니다. <strong>조합은 구청과 1년의 협의 끝에 2026년 3월 최종 합의를 이끌어냈습니다.</strong></span>
+      </div>
+    </div>
+ 
+    <div class="refute-item">
+      <div class="ri-claim">
+        <span class="ri-lbl claim">입대의 주장</span>
+        <span class="ri-text">조합장이 민원 제기를 제한하고 조합원을 제명하겠다고 한 것은 협박이다. 강력한 행정명령을 요청한다.</span>
+      </div>
+      <div class="ri-fact">
+        <span class="ri-lbl fact">사실</span>
+        <span class="ri-text">허위사실 유포에 대한 고소 예고는 정당한 법적 권리입니다. 조합원 제명은 정관에 근거한 절차로, 이는 협박이 아닌 조합 내부 규정에 따른 조치입니다.</span>
+      </div>
+    </div>
+ 
+    <div class="divider" id="i-auditor"></div>
+ 
+ 
+    <!-- 감사의 문서 -->
+    <div class="sec-header" style="padding-top:8px;">
+      <div class="sec-label">조합 내부 문서 ('25.11.23)</div>
+      <h2 class="sec-title">조합 내부인사가 배포한 문서,<br>내용이 틀렸습니다</h2>
+      <div class="red-bar"></div>
+    </div>
+ 
+    <!-- 핵심 문제 강조 박스 -->
+    <div style="background:#FFF0F0; border:2px solid #F0AAAA; border-radius:16px; padding:24px 26px; margin-bottom:22px;">
+      <div style="font-size:20px; font-weight:900; color:var(--red); margin-bottom:12px;">⚠️ 배포된 내용이 사실과 달랐습니다</div>
+      <div style="font-size:17px; color:var(--text); line-height:1.85;">
+        '25년 11월, 조OO 감사와 안OO이 구청 담당자를 면담한 내용을 정리해 조합원들에게 배포했습니다.<br><br>
+        문제는 이 문서가 <strong>구청 담당자의 중간 의견을 마치 최종 결론인 것처럼</strong> 전달했다는 것입니다.<br>
+        결과적으로 구청은 2026년 3월, <strong>문서에 담긴 내용과 정반대의 결론</strong>으로 조합과 합의했습니다.<br><br>
+        조합원들은 이 문서 때문에 불필요한 불안과 혼란을 겪어야 했습니다.
+      </div>
+    </div>
+ 
+    <div class="num-cards" style="margin-bottom:22px;">
+      <div class="num-card">
+        <div class="num-circle red">1</div>
+        <div class="num-content">
+          <div class="num-title">"장래효 적용이 법적 원칙" → 혼란 유발</div>
+          <div class="num-desc">구청 담당자 의견을 마치 최종 결론인 것처럼 배포했습니다. 그러나 <strong>구청은 2026년 3월 유이자 소급 방식을 최종 인정했습니다.</strong> 이 문서 때문에 많은 조합원들이 혼란을 겪었습니다.</div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle red">2</div>
+        <div class="num-content">
+          <div class="num-title">"현재 비례율은 도정법 위반" → 이미 해결된 내용</div>
+          <div class="num-desc">조합은 이미 비례율 방식 전환에 동의한 상태였습니다. 해결된 내용을 마치 심각한 문제인 것처럼 배포해 <strong>불필요한 불안을 조성했습니다.</strong></div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle red">3</div>
+        <div class="num-content">
+          <div class="num-title">"조합이 구청과 소통 안 한다" → 사실과 다름</div>
+          <div class="num-desc">조합과 구청은 협의를 지속하고 있었습니다. 맥락을 무시한 채 <strong>조합이 아무것도 안 하는 것처럼 보이게 만든 것</strong>입니다.</div>
+        </div>
+      </div>
+      <div class="num-card">
+        <div class="num-circle red">4</div>
+        <div class="num-content">
+          <div class="num-title">"조합장·이사회에 엄중 요구" → 권한 범위 벗어난 행위</div>
+          <div class="num-desc">문서 말미에 "조합장과 이사회/대의원회에 엄중히 요구한다"는 내용으로 조합원들을 선동했습니다. <strong>조OO 감사와 안OO이 사실상 비대위 역할을 자임한 것입니다.</strong></div>
+        </div>
+      </div>
+    </div>
+ 
+    <div style="background:#1A1A2A; border-radius:16px; padding:24px 26px; margin-bottom:24px;">
+      <div style="font-size:18px; font-weight:900; color:#F0C040; margin-bottom:12px;">📌 결론 — 이 문서가 남긴 것</div>
+      <div style="font-size:17px; color:rgba(255,255,255,0.85); line-height:1.9;">
+        내부에서 배포된 이 문서는 <strong style="color:#F87171;">조합원들의 불안과 불신을 최고조로 끌어올렸습니다.</strong><br>
+        그러나 문서에 담긴 내용은 구청의 중간 의견이거나, 이미 조합이 해결 중인 사항이었습니다.<br><br>
+        <strong style="color:#6EE08A;">2026년 3월, 구청은 조합의 방향을 모두 인정했습니다.</strong><br>
+        문서의 주장이 틀렸고, 조합이 옳았습니다.
+      </div>
+    </div>
+ 
+    <div class="divider" id="i-result"></div>
+ 
+    <!-- 결론 -->
+    <div class="result-banner" style="margin-top:8px;">
+      <h3>수많은 방해에도<br>여기까지 올 수 있었습니다</h3>
+      <p>
+        1년이 넘는 허위 주장, 공문 배포, 구청 단독 간담회,<br>
+        조합 내부에서까지 불신이 퍼진 상황에서도<br>
+        조합은 법적 검토와 구청 협의를 통해<br>
+        <strong>2026년 3월 27일 최종 합의에 이르렀습니다.</strong><br><br>
+        구청이 인정한 방향으로 총회·관리처분변경인가·등기를 진행합니다.
+      </p>
+    </div>
+ 
+  </div>
+  <div class="page-bottom"></div>
+</div>
+ 
+ 
+<div class="page" id="page-doubt">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label">의혹 & 불법 논란</div>
+      <h2 class="sec-title">불법이라는 주장,<br>사실은 이렇습니다</h2>
+      <div class="sec-desc">일부 조합원들이 1년 넘게 "불법"이라고 주장해왔습니다. 수십 번의 경찰 조사와 서울시 실태조사 결과, <strong>단 한 건도 유죄 판결이 없습니다.</strong></div>
+      <div class="red-bar"></div>
+    </div>
+
+    <!-- 검증 3단계 -->
+    <div class="verify-grid">
+      <div class="vcard">
+        <div class="vcard-num">1차</div>
+        <div class="vcard-title">서울시·구청<br>합동 실태조사</div>
+        <div class="vcard-desc">'24년 12월, 2주간 조사. 추가분담금 포함 전반 조사 실시.</div>
+        <div class="vcard-result">✓ 지적 없음</div>
+      </div>
+      <div class="vcard">
+        <div class="vcard-num">2차</div>
+        <div class="vcard-title">경찰 수사<br>수십 건</div>
+        <div class="vcard-desc">조합장·임원 등 수십 건 고소. 1년 이상 조사 진행.</div>
+        <div class="vcard-result">✓ 혐의없음</div>
+      </div>
+      <div class="vcard">
+        <div class="vcard-num">3차</div>
+        <div class="vcard-title">외부 법무법인<br>법률검토 3건</div>
+        <div class="vcard-desc">구청이 외부 법무법인에 3건 의뢰. 조합도 자체 검토.</div>
+        <div class="vcard-result">✓ 기소 없음</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 의혹 1 -->
+    <h3 style="font-size:20px;font-weight:900;margin-bottom:16px;color:var(--text);">① 구청 승인 없이 추가분담금 받은 것 — 불법?</h3>
+    <div class="refute-item">
+      <div class="ri-claim"><span class="ri-lbl claim">주장</span><span class="ri-text">구청의 관리처분변경 인가(공식 승인)가 없었으니 추가분담금을 받는 건 불법이다.</span></div>
+      <div class="ri-fact"><span class="ri-lbl fact">사실</span><span class="ri-text"><strong>조합원 전체 회의(총회) 결정이 실질적 효력의 근거입니다.</strong> 구청 승인은 그 결정을 사후에 확인하는 절차일 뿐입니다. 대법원 판례(2009두4913 등)도 이를 일관되게 확인하고 있습니다.<br><br>
+      <strong>비유:</strong> 결혼식을 올리고 함께 살고 있으면, 혼인신고가 아직 처리 중이라도 결혼이 가짜가 되지 않는 것과 같습니다.</span></div>
+    </div>
+
+    <!-- 의혹 2 -->
+    <h3 style="font-size:20px;font-weight:900;margin-bottom:16px;margin-top:28px;color:var(--text);">② 이주비 이자 소급 적용 — 불법?</h3>
+    <div class="refute-item">
+      <div class="ri-claim"><span class="ri-lbl claim">주장</span><span class="ri-text">장래효(앞으로만 효력이 생기는 원칙) 때문에 과거 이자를 소급해서 받을 수 없다. 위법이다.</span></div>
+      <div class="ri-fact"><span class="ri-lbl fact">사실</span><span class="ri-text">총회에서 <strong>명확히 과거 기간 정산을 의결했다면 적법합니다.</strong> "효력이 언제부터 생기는가"와 "어느 기간을 계산하는가"는 별개의 문제입니다.<br><br>
+      <strong>비유:</strong> 12월에 "1월부터 월급 인상" 합의 → 1~11월치 차액을 오늘 정산. 이것이 위법입니까? 아닙니다. 이것이 조합의 방식입니다.</span></div>
+    </div>
+
+    <!-- 의혹 3 -->
+    <h3 style="font-size:20px;font-weight:900;margin-bottom:16px;margin-top:28px;color:var(--text);">③ 추가분담금을 두 번 걷는다?</h3>
+    <div class="refute-item">
+      <div class="ri-claim"><span class="ri-lbl claim">주장</span><span class="ri-text">집값 비율(비례율) 하락분도 내고, 별도 추가분담금도 내야 하니 두 번 내는 것이다.</span></div>
+      <div class="ri-fact"><span class="ri-lbl fact">사실</span><span class="ri-text">조합원이 낸 추가분담금이 공사비 부족분(약 225억 원)에 쓰여 <strong>집값 비율이 하락하지 않았습니다.</strong> 비율이 유지되었으니 비율 하락 때문에 추가로 낼 돈이 없습니다. 이중 부과가 아닙니다.</span></div>
+    </div>
+
+    <!-- 의혹 4 -->
+    <h3 style="font-size:20px;font-weight:900;margin-bottom:16px;margin-top:28px;color:var(--text);">④ 보정계수 방식 — 도정법(재개발 관련 법) 위반?</h3>
+    <div class="refute-item">
+      <div class="ri-claim"><span class="ri-lbl claim">주장</span><span class="ri-text">재개발 법에서 집값 비율(비례율)로 하도록 되어있는데 다른 방식을 써서 위법이다.</span></div>
+      <div class="ri-fact"><span class="ri-lbl fact">사실</span><span class="ri-text">
+        조합의 최대최소 보정방식은 <strong>법적으로 문제없는 방식이었습니다.</strong> 조경·커뮤니티 등 공용시설 혜택은 모든 조합원이 똑같이 누리는데, 모두가 최소한의 비용을 나눠 부담하는 것이 오히려 더 공평합니다.<br><br>
+        조합이 틀려서 방식을 바꾼 것이 아닙니다. <strong>구청이 비례율 방식을 요구하므로, 더 빠른 마무리를 위해 조합이 수긍한 것입니다.</strong> 법적 싸움보다 조합원의 재산권을 빨리 찾아드리는 것이 우선이기 때문입니다.
+      </span></div>
+    </div>
+
+    <!-- 의혹 5 -->
+    <h3 style="font-size:20px;font-weight:900;margin-bottom:16px;margin-top:28px;color:var(--text);">⑤ 시공사에 준공 전 돈을 불법 지급?</h3>
+    <div class="refute-item">
+      <div class="ri-claim"><span class="ri-lbl claim">주장</span><span class="ri-text">아파트가 다 완공되기 전에 현대건설에 잔금을 줬다. 불법이다.</span></div>
+      <div class="ri-fact"><span class="ri-lbl fact">사실</span><span class="ri-text">현대건설과의 도급계약서 기준으로 진행했습니다. <strong>아파트 공사(현대건설)와 기반시설 공사(씨지주택)는 별개 계약</strong>입니다. 현대건설 공사가 완료되면 현대건설에 잔금을 주는 것이 당연합니다. 수십 건의 경찰 조사에서 모두 혐의없음으로 결론났습니다.</span></div>
+    </div>
+
+    <!-- 의혹 6 -->
+    <h3 style="font-size:20px;font-weight:900;margin-bottom:16px;margin-top:28px;color:var(--text);">⑥ 등기를 고의로 늦추고 있다?</h3>
+    <div class="refute-item">
+      <div class="ri-claim"><span class="ri-lbl claim">주장</span><span class="ri-text">조합이 등기를 일부러 늦추고 있다.</span></div>
+      <div class="ri-fact"><span class="ri-lbl fact">사실</span><span class="ri-text">오히려 반대입니다. 매번 작은 변경에도 구청 승인을 받으러 갔다면 수개월씩 사업이 중단됐을 겁니다. <strong>일괄 처리 방식이 가장 빠른 방법</strong>이었으며, 고의 지연이 목적이었다면 "절차대로" 하는 척 시간을 끌었을 것입니다.</span></div>
+    </div>
+
+    <div class="result-banner" style="margin-top:40px;">
+      <h3>결론</h3>
+      <p>7가지 불법 주장 모두 — 실태조사, 경찰 수사, 법률검토 — 세 차례 검증에서<br><strong>단 한 건도 사실로 확인된 것이 없습니다.</strong></p>
+    </div>
+
+  </div>
+  <div class="page-bottom"></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: DETAIL (세부 진행경과)
+══════════════════════════════════════════ -->
+<div class="page" id="page-detail">
+  <div class="subnav">
+    <div class="subnav-inner">
+      <a href="#d-timeline" class="active">📅 사건 타임라인</a>
+      <a href="#d-president">📝 조합장 당시 상황</a>
+      <a href="#d-verify">✅ 3중 검증</a>
+    </div>
+  </div>
+  <div class="container">
+ 
+    <div id="d-timeline" class="sec-header">
+      <div class="sec-label">세부 진행경과</div>
+      <h2 class="sec-title">지난 1년,<br>무슨 일이 있었나요?</h2>
+      <div class="red-bar"></div>
+    </div>
+ 
+    <div class="tl-wrap">
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'24년<br>11월</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">시작</div>
+          <div class="tl-title">일부 조합원, 민원 일제히 제기</div>
+          <div class="tl-desc">정보공개 사이트를 통해 조합 운영 관련 민원을 한꺼번에 제기. 관악구청이 서울시에 실태조사를 요청.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'24년<br>12월</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">조사</div>
+          <div class="tl-title">서울시·구청 합동 실태조사 (2주)</div>
+          <div class="tl-desc">입주 한 달 전, 가장 바쁜 시기에 2주간 실태조사를 받았습니다. 잔금 정산 준비와 동시에 진행하며 극한의 어려움 속에서도 잘 마쳤습니다.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>1월</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">결과</div>
+          <div class="tl-title">실태조사 결과 — 추가분담금 지적 없음</div>
+          <div class="tl-desc"><strong>추가분담금 관련 지적사항 없음.</strong> 수사의뢰 2건은 모두 전 조합장의 자료 미공개·인수인계 미비 문제였습니다.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>1~3월</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">검토</div>
+          <div class="tl-title">법무법인 법률검토 3건 진행</div>
+          <div class="tl-desc">구청이 외부 법무법인에 3건의 법률검토를 의뢰. 조합도 별도로 법률검토를 진행. <strong>후속 기소 없음.</strong></div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>6월</div></div>
+        <div class="tl-spine"><div class="tl-dot" style="background:var(--red);"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag warn">위기</div>
+          <div class="tl-title">조합장, 일부 조합원 주장대로 하면 금융파산 경고</div>
+          <div class="tl-desc">일부 조합원 주장대로 유이자·추가분담금 전부 돌려주면 <em>375억~400억 환급으로 금융파산</em>, 보존등기 불가 사태 발생. 조합장이 이를 공개 경고하고 법리적 해결 방향으로 전환.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>9월</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">간담회</div>
+          <div class="tl-title">구청 간담회 (조합 미통보)</div>
+          <div class="tl-desc">구청이 조합에 알리지 않고 입주자대표회의와 단독 간담회 개최. 일부 조합원들이 해임을 시도했으나 다수 조합원들의 반대로 무산.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'25년<br>11월</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">소통</div>
+          <div class="tl-title">구청과 본격 협의 시작</div>
+          <div class="tl-desc">조합이 제시한 유이자 소급 방안에 대해 구청과 구체적인 협의를 시작했습니다.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'26년<br>1월</div></div>
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag done">합의</div>
+          <div class="tl-title">구청, 유이자 소급 방식 인정</div>
+          <div class="tl-desc"><strong>구청이 조합의 유이자 소급 방안을 인정</strong>하고, 비례율 방식으로의 전환에도 합의. 1년여 법적 검토 끝에 최종 결론 도출.</div>
+        </div>
+      </div>
+ 
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-date">'26년<br>3월 27일</div></div>
+        <div class="tl-spine"><div class="tl-dot active"></div><div class="tl-vline"></div></div>
+        <div class="tl-right">
+          <div class="tl-tag now">최종</div>
+          <div class="tl-title">관악구청과 최종안 합의 완료</div>
+          <div class="tl-desc"><strong>관리처분변경 관련 구청과 최종안 도출 완료.</strong> 이제 총회·관리처분변경인가·이전고시 절차만 남았습니다.</div>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <div class="divider" id="d-president"></div>
+ 
+    <!-- 조합장 당시 상황 -->
+    <div class="sec-header">
+      <div class="sec-label">조합장 당시 상황</div>
+      <h2 class="sec-title">조합장은 그때<br>어떤 상황이었나요?</h2>
+      <div class="red-bar"></div>
+    </div>
+ 
+    <div class="card" style="margin-bottom:20px;">
+      <div class="card-title">감당하기 어려운 상황이었습니다</div>
+      <div class="card-body">
+        '25년 6월, 조합장은 다음과 같은 상황에 처해있었습니다:<br><br>
+        • 수십 건의 고소로 1년 넘게 경찰 조사<br>
+        • 배우자까지 고소 피소<br>
+        • 당뇨 수치 악화 (8.1 이상 지속)<br>
+        • 685명 조합원 설득의 한계<br><br>
+        그럼에도 <strong>조합원 340명의 요청으로 끝까지 책임지고 진행</strong>하기로 했습니다.
+      </div>
+    </div>
+ 
+    <div class="quote-box">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">가장 깨끗한 도정법에 따라서 처리합니다. 조합원들이 원하든 원하지 않든 법대로 처리해야 설명이 쉽습니다.</div>
+      <div class="quote-who">— 서충원 조합장 ('25년 6월, 조합 단톡방)</div>
+    </div>
+ 
+    <div class="info-box">
+      <strong>결과적으로 :</strong> 당시 조합장이 가장 합리적이라고 판단했던 방안(3안)이 1년의 법적 검토 끝에 구청의 동의까지 받아 최종안이 되었습니다.
+    </div>
+ 
+    <div class="divider" id="d-verify"></div>
+ 
+    <!-- 3중 검증 -->
+    <div class="sec-header">
+      <div class="sec-label">3중 검증 결과</div>
+      <h2 class="sec-title">세 번 검증 — 모두 이상없음</h2>
+      <div class="red-bar"></div>
+    </div>
+ 
+    <div class="verify-grid">
+      <div class="vcard">
+        <div class="vcard-num">1차</div>
+        <div class="vcard-title">서울시·구청<br>합동 실태조사</div>
+        <div class="vcard-desc">'24년 12월, 2주간 조사. 추가분담금 및 보정방식 포함 전반 조사.</div>
+        <div class="vcard-result">✓ 지적 없음</div>
+      </div>
+      <div class="vcard">
+        <div class="vcard-num">2차</div>
+        <div class="vcard-title">경찰 수사<br>수십 건</div>
+        <div class="vcard-desc">도정법 위반·횡령 등 고소. 1년 이상 수십 차례 조사.</div>
+        <div class="vcard-result">✓ 혐의없음</div>
+      </div>
+      <div class="vcard">
+        <div class="vcard-num">3차</div>
+        <div class="vcard-title">외부 법무법인<br>법률검토</div>
+        <div class="vcard-desc">구청 의뢰 3건 + 조합 자체 검토.</div>
+        <div class="vcard-result">✓ 기소 없음</div>
+      </div>
+    </div>
+ 
+  </div>
+  <div class="page-bottom"></div>
+</div>
+ 
+
+<!-- ══════════════════════════════════════════
+     PAGE: CLOSING (맺음말)
+══════════════════════════════════════════ -->
+<div class="page" id="page-closing">
+
+  <!-- 풀스크린 히어로 배너 -->
+  <div style="background: linear-gradient(160deg, #0A0A1A 0%, #1555A0 60%, #0A2050 100%); padding: 72px 24px 60px; text-align:center; position:relative; overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22><circle cx=%2230%22 cy=%2230%22 r=%221%22 fill=%22white%22 opacity=%220.08%22/></svg>');"></div>
+    <div style="position:relative; max-width:700px; margin:0 auto;">
+      <div style="display:inline-block; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.25); color:rgba(255,255,255,0.9); font-size:13px; font-weight:800; padding:6px 20px; border-radius:30px; margin-bottom:28px; letter-spacing:0.1em;">봉천동 4-1-2구역 주택재개발정비사업조합</div>
+      <h1 style="font-size:clamp(30px,5vw,52px); font-weight:900; color:#fff; line-height:1.3; margin-bottom:20px;">이제, 앞으로만<br><span style="color:#F0C040;">나아갑니다</span></h1>
+      <p style="font-size:19px; color:rgba(255,255,255,0.78); line-height:1.85; margin-bottom:0;">1년의 싸움이 끝났습니다.<br>이제는 685명 조합원의 재산권 회복에만 집중합니다.</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- 감사 메시지 — 강조 -->
+    <div style="background:#FFF8E0; border:2px solid #F0C040; border-radius:20px; padding:36px 32px; margin:40px 0 28px; text-align:center;">
+      <div style="font-size:40px; margin-bottom:16px;">🙏</div>
+      <h2 style="font-size:26px; font-weight:900; color:#8B5E00; margin-bottom:16px; line-height:1.4;">끝까지 믿고 지지해 주신<br>조합원 여러분께 깊이 감사드립니다</h2>
+      <p style="font-size:18px; color:#6B4400; line-height:1.95;">
+        수십 번의 허위 고소, 끊임없는 불법 주장, 사실과 다른 문서 배포까지—<br>
+        그 모든 혼란 속에서도 <strong>340명 이상의 조합원께서 끝까지 함께해 주셨습니다.</strong><br><br>
+        조합원 여러분의 믿음이 있었기에 여기까지 올 수 있었습니다.<br>
+        그 믿음을 붙잡고 끝까지 함께한 이사진께도 진심으로 고맙습니다.<br><br>
+        <span style="font-size:16px; color:#A07020;">우리가 이룬 것이 아닙니다. 여러분이 지켜주신 것입니다.</span>
+      </p>
+    </div>
+
+    <!-- 지나온 길 요약 -->
+    <div class="card" style="margin-bottom:20px;">
+      <div class="card-title" style="font-size:22px;">지난 1년, 우리가 버텨온 것들</div>
+      <div class="card-body" style="font-size:18px;">
+        수십 건의 고소 → 수십 차례 경찰 출석 → <strong style="color:var(--green);">전부 혐의없음</strong><br>
+        서울시·구청 합동 실태조사 → <strong style="color:var(--green);">추가분담금 관련 지적 없음</strong><br>
+        외부 법무법인 법률검토 3건 → <strong style="color:var(--green);">기소 없음</strong><br>
+        조합 내부에서까지 불신 문서 배포 → <strong style="color:var(--green);">그래도 구청과 최종 합의 완료</strong>
+      </div>
+    </div>
+
+    <!-- 앞으로의 방향 -->
+    <div style="background:var(--dark); border-radius:20px; padding:36px 32px; margin-bottom:24px;">
+      <div style="font-size:22px; font-weight:900; color:#F0C040; margin-bottom:24px; text-align:center;">📌 앞으로 나아갈 방향</div>
+      <div class="num-cards">
+        <div class="num-card" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.15);">
+          <div class="num-circle green">1</div>
+          <div class="num-content">
+            <div class="num-title" style="color:#fff;">총회 — 조합원의 최종 결정</div>
+            <div class="num-desc" style="color:rgba(255,255,255,0.75);">6월 총회에서 관리처분변경안을 조합원 전체가 함께 의결합니다. 소모적인 논쟁이 아닌, 공식적인 절차로 마무리합니다.</div>
+          </div>
+        </div>
+        <div class="num-card" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.15);">
+          <div class="num-circle green">2</div>
+          <div class="num-content">
+            <div class="num-title" style="color:#fff;">관리처분변경인가 — 구청 공식 승인</div>
+            <div class="num-desc" style="color:rgba(255,255,255,0.75);">구청과 합의된 방향으로 관리처분변경인가를 신청합니다. 불필요한 절차 없이 신속하게 진행합니다.</div>
+          </div>
+        </div>
+        <div class="num-card" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.15);">
+          <div class="num-circle green">3</div>
+          <div class="num-content">
+            <div class="num-title" style="color:#fff;">이전고시 & 등기 — 재산권 완성</div>
+            <div class="num-desc" style="color:rgba(255,255,255,0.75);">685명 조합원의 재산권이 법적으로 완성되는 순간입니다. 이것이 조합이 끝까지 버텨온 이유입니다.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 파스칼 인용 -->
+    <div class="pascal">
+      <div class="pascal-num">327</div>
+      세상은 사물의 훌륭한 재판관이다. 지식에는 두 가지 극단이 있다 — 태어날 때 가지는 순수한 무지(無知), 그리고 모든 것을 꿰뚫은 뒤 다시 무지로 돌아오는 위대한 지식. <strong>그 사이에 어중간하게 서서 어설픈 지식으로 아는 체하는 자들이 세상을 혼란시킨다.</strong> 평범한 민중과 현자들이 세상을 이끌어간다.
+      <div class="pascal-src">— 블레즈 파스칼, 『팡세』 327</div>
+    </div>
+
+    <!-- 마지막 다짐 -->
+    <div style="background:linear-gradient(135deg, #0F3460, #1555A0); border-radius:20px; padding:40px 32px; text-align:center; margin-bottom:28px;">
+      <h3 style="font-size:26px; font-weight:900; color:#fff; margin-bottom:18px; line-height:1.45;">소모적인 논쟁은 끝났습니다.<br>우리는 <span style="color:#F0C040;">앞으로</span>만 갑니다.</h3>
+      <p style="font-size:18px; color:rgba(255,255,255,0.8); line-height:1.9; margin-bottom:24px;">
+        구청과 합의된 절차에 따라 총회·인가·등기를 신속히 완료하겠습니다.<br>
+        <strong style="color:#6EE08A;">685명 조합원의 재산권 보호</strong>가 우리의 마지막 임무입니다.
+      </p>
+      <div style="width:60px; height:3px; background:#F0C040; border-radius:2px; margin:0 auto 24px;"></div>
+      <p style="font-size:16px; color:rgba(255,255,255,0.6); line-height:1.9;">
+        봉천동 4-1-2구역 주택재개발정비사업조합<br>
+        조합장 서충원, 함께해 주신 이사진 일동<br><br>
+        문의 : 조합 사무실 (888-9141)
+      </p>
+    </div>
+
+  </div>
+  <div class="page-bottom"></div>
+</div>
+
+<!-- ══ JS ══ -->
+<script>
+// ── 페이지 전환
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.topnav-menu > li > a').forEach(a => a.classList.remove('active'));
+  const page = document.getElementById('page-' + name);
+  if (page) page.classList.add('active');
+  const navEl = document.getElementById('nav-' + name);
+  if (navEl) navEl.classList.add('active');
+  window.scrollTo({ top: 0 });
+}
+
+// ── 서브 앵커 스크롤
+function scrollToSub(id) {
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) {
+      const offset = el.getBoundingClientRect().top + window.scrollY - 110;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  }, 80);
+}
+
+// ── 서브내비 active 상태 (스크롤 감지)
+function updateSubnav() {
+  const activePage = document.querySelector('.page.active');
+  if (!activePage) return;
+  const subnav = activePage.querySelector('.subnav-inner');
+  if (!subnav) return;
+  const links = subnav.querySelectorAll('a');
+  let current = '';
+  links.forEach(a => {
+    const href = a.getAttribute('href');
+    const match = href && href.match(/#([^)]+)/);
+    if (!match) return;
+    const el = document.getElementById(match[1]);
+    if (el && el.getBoundingClientRect().top <= 130) current = match[1];
+  });
+  links.forEach(a => {
+    const href = a.getAttribute('href');
+    const match = href && href.match(/#([^)]+)/);
+    a.classList.toggle('active', match && match[1] === current);
+  });
+}
+window.addEventListener('scroll', updateSubnav);
+
+// ── 모바일 드롭다운 토글
+document.querySelectorAll('.dropdown-wrap > a').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const wrap = this.closest('.dropdown-wrap');
+    const isOpen = wrap.classList.contains('open');
+    document.querySelectorAll('.dropdown-wrap').forEach(w => w.classList.remove('open'));
+    if (!isOpen) wrap.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.dropdown-wrap')) {
+    document.querySelectorAll('.dropdown-wrap').forEach(w => w.classList.remove('open'));
+  }
+});
+</script>
+</body>
+</html>
